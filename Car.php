@@ -12,10 +12,8 @@ class Car
 {
     public $brand;
     public $mileage;
-    static $describe = "Masinam ir cetras durvis bet retos gadijumos tas cigani aizmetina";
-
+    static $describe = "I have 4 wheels, but sometimes 3.";
     
-
     function __construct($brand = "", $mileage = 0)
     {
         $this->brand = $brand;
@@ -27,9 +25,11 @@ class Car
     }
     function increaseMileage($amount)
     {
-        $this->mileage = $this->mileage += $amount;
+        $this->mileage = $this->mileage + $amount;
     }
-    static function makeNoise() {
-        return "Beep, Beep!";
+    
+    static function makeNoice(){
+        echo "Beep,Beep!";
     }
+ 
 }
